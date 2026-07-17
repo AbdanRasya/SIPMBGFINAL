@@ -1,0 +1,23 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Fix for all interactive elements to have pointer cursor globally */
+button, 
+[role="button"],
+a,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Base styles to ensure full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: transparent;
+}
